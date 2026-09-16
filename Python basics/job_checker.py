@@ -1,4 +1,4 @@
-#Job checker
+# **Job checker
 cgpa = float(input("Enter your cgpa: "))
 backlogs = input("Do you have active backlogs? (Yes/No) ")
 python = input("Do you know python? (Yes/No) ")

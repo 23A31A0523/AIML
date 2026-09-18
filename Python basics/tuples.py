@@ -24,3 +24,10 @@ model, accuracy, task = model_info
 print("Model: ",model)
 print("Accuracy: ",accuracy)
 print("Task: ",task)
+
+
+scores = (85, 90, 92, 88, 90)
+print(len(scores))
+print(max(scores))
+print(min(scores))
+print(scores.count(90))

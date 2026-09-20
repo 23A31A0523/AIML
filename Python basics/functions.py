@@ -132,13 +132,96 @@
 # )
 
 
-# dictionary + loop + **kwargs
-def student_details(**details):
-    for key,value in details.items():
-        print(f"{key} : {value}")
+# # dictionary + loop + **kwargs
+# def student_details(**details):
+#     for key,value in details.items():
+#         print(f"{key} : {value}")
 
-student_details(
-    name="Kal",
-    branch="CSE",
-    cgpa=8.5
-)
+# student_details(
+#     name="Kal",
+#     branch="CSE",
+#     cgpa=8.5
+# )
+
+
+# **Lambda function
+# add = lambda a, b: a + b
+# print(add(10, 5))
+
+# mul = lambda x, y: x * y
+# print(mul(6,7))
+
+# is_even = lambda x: x % 2 == 0
+# print(is_even(8))
+# print(is_even(7))
+
+# add_ten = lambda x : x + 10
+# print(add_ten(5))
+
+# square = lambda x : x ** 2
+# print(square(2))
+
+
+# numbers = [1, 2, 3, 4, 5]
+# squares = list(map(lambda x: x ** 2, numbers))
+# print(squares)
+
+# numbers = [10, 20, 30, 40, 50]
+# add_five = list(map(lambda x:x+5,numbers))
+# print(add_five)
+
+# names = ["kal", "anu", "sai", "ram"]
+# up = list(map(lambda x : x.upper(),names))
+# print(up)
+
+
+# numbers = [1, 2, 3, 4, 5, 6]
+# even = list(filter(lambda x: x % 2 == 0, numbers))
+# print(even)
+
+# numbers = [5, 12, 8, 20, 3, 15, 2]
+# more_than_five = list(filter(lambda x : x > 5,numbers))
+# print(more_than_five)
+
+# words = ["AI", "Python", "ML", "Data", "SQL", "DeepLearning"]
+# res = list(filter(lambda x : len(x) > 3 , words))
+# print(res)
+
+# students = [
+#     ("Kal", 85),
+#     ("Anu", 92),
+#     ("Sai", 78)
+# ]
+# result = sorted(students, key=lambda x: x[1])
+# print(result)
+
+# products = [
+#     ("Laptop", 55000),
+#     ("Mouse", 800),
+#     ("Keyboard", 1500),
+#     ("Monitor", 12000)
+# ]
+# res = sorted(products, key=lambda x: x[1])
+# print(res)
+# res2 = sorted(products, key=lambda x: x[1], reverse=True)
+# print(res2)
+
+# students = [
+#     ("Kal", 85),
+#     ("Anu", 92),
+#     ("Sai", 78),
+#     ("Ram", 95)
+# ]
+# filtered_students = list(
+#     filter(lambda x: x[1] > 80, students)
+# )
+# result = sorted(
+#     filtered_students,
+#     key=lambda x: x[1],
+#     reverse=True
+# )
+# print(result)
+
+temperatures = [20, 25, 30, 35, 40]
+fahrenheit = list(map(lambda x: (x * 9/5) + 32, temperatures))
+print(fahrenheit)
